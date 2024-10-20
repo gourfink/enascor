@@ -1,1 +1,292 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,200,100,500,600,700,800,900);
 
+body{
+	font-size: 16px;
+	font-weight: 400;
+}
+
+body, h1, h2, h3, h4, h5 {font-family: 'Raleway', sans-serif;color: #333;}
+
+h2{
+	font-size: 50px;
+	font-weight: 600;
+	margin: 20px 0;
+}
+
+h3{
+	font-size: 30px;
+	font-weight: 600;
+	margin: 20px 0;
+}
+
+h5{
+	font-size: 25px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+input, textarea {
+	border: 0 !important;
+	border-bottom: 1px solid #ddd !important;
+	border-radius: 0 !important;
+}
+textarea {
+	resize: none;
+}
+
+p {
+	font-size: 0.8rem;
+}
+
+div.section {
+	opacity: 0;
+	-webkit-transition: opacity 1s linear;
+	-moz-transition: opacity 1s linear;
+	-o-transition: opacity 1s linear;
+	transition: opacity 1s linear;
+}
+
+div.section.active {
+	opacity: 1;
+}
+
+.form-control:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0rem rgb(0 204 204 / 0.20);
+	border-bottom: 1px solid #333 !important;
+}
+
+.header{
+	background: #fff;
+	box-shadow: 0px 1px 5px #666;
+}
+
+.logo {
+	width: 100%;
+	max-width: 185px;
+	min-width: 160px;
+}
+
+.menu li a {
+	color: #333;
+	border-radius: 0px;
+	outline: none;
+}
+
+.menu li a:hover {
+	color: #000;
+	outline: none;
+}
+
+.btn.focus, .btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0rem rgba(255,255,255,0);
+}
+
+.menu-dot {
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 8px;
+	color: #444;
+}
+
+.menu li:hover .menu-dot,
+.menu li.active .menu-dot{
+	opacity: 1;
+}
+
+.nav-tabs {
+	border: 0;
+}
+
+.video-title {
+	top: 250px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.video-title h1,
+.video-title a, {
+	color: #fff !important;
+}
+
+.bg-black {
+	background: #000;
+}
+
+.text-red{
+	color: #ff0000;
+}
+
+.text-green {
+	color: #00cccc; 
+}
+
+.text-box {
+	overflow-y: scroll;
+	height: 45rem;
+	padding: 5px 25px;
+}
+
+.hover-color {
+	filter: grayscale(100%);
+}
+
+.hover-color:hover {
+	filter: grayscale(0%);
+	cursor: pointer;
+}
+
+.modal-content {
+	background: transparent !important;
+	border: unset !important;
+}
+
+.modal-body {
+	padding: 0px !important;
+}
+
+.modal-body button.close {
+	position: absolute;
+	right: -20px;
+	color: #fff;
+	opacity: 1 !important;
+	font-size: 20px;
+	line-height: 15px;
+	top: -25px;
+}
+
+.fb-link {
+	font-size: 1.6em;
+	margin-left: 10px;
+	color: #999999 !important;
+}
+
+.fb-link:hover {
+	color: #4267b2 !important;
+}
+
+/* width */
+div::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+div::-webkit-scrollbar-track {
+	background: #fff;
+	box-shadow: inset 0 0 3px grey; 
+	border-radius: 3px;
+}
+
+/* Handle */
+div::-webkit-scrollbar-thumb {
+	background: #f5f5f5;
+	border-radius: 3px;
+	box-shadow: inset 0 0 3px grey;
+}
+
+/* Handle on hover */
+div::-webkit-scrollbar-thumb:hover {
+	background: #ddd;
+	box-shadow: inset 0 0 3px grey;
+}
+
+.video-container iframe {
+	max-width: 650px;
+}
+
+.video-container video {
+	background: #000;
+}
+
+.last-bg {
+	bottom: 0;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 10px;
+	color: #fff;
+	position: absolute;
+	bottom: 12%;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+.copyright em {
+	background: rgb(128 128 128 / 0.3);
+}
+
+@media(max-width: 1024px) {
+	.menu li a {
+		font-size: 0.8rem;
+	}
+
+	.video-container video{
+		max-width: 100%;
+	}
+	.text-box {
+		height: 30rem;
+	}
+}
+
+.open-menu {display: none;}
+.sm-open { visibility: hidden; }
+
+@media(max-width: 900px) {
+	.h1, h1 {
+		font-size: 1.5rem;
+	}
+	.menu {
+		position: fixed;
+		width: 250px;
+		height: 100%;
+		right: -250px;
+		top: 55px;
+		background: #fff;
+		display: block;
+		transition: right 0.3s linear;
+		-webkit-transition: right 0.3s linear;
+		-moz-transition: right 0.3s linear;
+		-o-transition: right 0.3s linear;
+	}
+	.open-menu {
+		display: inline-block;
+		font-size: 1.8rem;
+		margin-top: 7px;
+	}
+	.sm-open {
+		right: 0 !important;
+		visibility: visible !important;
+		box-shadow: 1px 3px 5px #666;
+		transition: right 0.3s linear;
+		-webkit-transition: right 0.3s linear;
+		-moz-transition: right 0.3s linear;
+		-o-transition: right 0.3s linear;
+	}
+	.menu li {
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	.menu li a {
+		font-size: 1.2rem;
+	}
+
+	@media(max-height: 480px) {
+		.text-box {
+			height: 10rem;
+		}
+	}
+}
